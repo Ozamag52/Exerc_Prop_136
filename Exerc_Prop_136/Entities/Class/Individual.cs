@@ -31,11 +31,11 @@ namespace Exerc_Prop_136.Entities.Class
             if (HealthExpenditures > 0.00)
             {
                 double abat = HealthExpenditures * 0.5;
-                return AnualIncome - (tax - abat);
+                return (tax - abat);
             }
-            else 
-            { 
-                return AnualIncome - tax;
+            else
+            {
+                return tax;
             }
         }
 
